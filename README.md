@@ -8,3 +8,4 @@ REBOL 3.
 Very basic layout code written with ability to set servers and type an 
 email message. Tested and is able to send an email.
 # mailsnail
+fixed new email

@@ -17,22 +17,25 @@ view layout [
         ]
 
         btn "New E-mail" [
-            address: field "username@domain.extension"
-            subject: field "Subject"
-            body: area "Body"
+        	view layout 
+        	[ 
+            	address: field "username@domain.extension"
+            	subject: field "Subject"
+            	body: area "Body"
 
-            btn "Send" [ 
-                send/subject (to-email address/text) body/text subject/text
-                alert "Sent!"
-            ]
+            	btn "Send" [ 
+                	send/subject (to-email address/text) body/text subject/text
+                	alert "Sent!"
+            	]
             
-            btn "Save" [ 
+            	btn "Save" [ 
 
+            	]
+
+            	btn "Load" [
+
+            	]            
             ]
-
-            btn "Load" [
-
-            ]            
         ]
 
         btn "Receive mail" [
